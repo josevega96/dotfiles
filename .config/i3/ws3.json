@@ -1,0 +1,46 @@
+// vim:ts=4:sw=4:et
+{
+    "border": "pixel",
+    "current_border_width": 0,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 694,
+       "width": 1336,
+       "x": 15,
+       "y": 37
+    },
+    "name": "Franz",
+    "percent": 0.5,
+    "swallows": [
+       {
+       / "class": "franz",
+         "instance": "franz",
+         "title": "franz",
+         "window_role": "^browser\\-window$"
+       }
+    ],
+    "type": "con"
+}
+
+{
+    "border": "pixel",
+    "current_border_width": 0,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 694,
+       "width": 663,
+       "x": 15,
+       "y": 37
+    },
+    "name": "Telegram",
+    "percent": 0.5,
+    "swallows": [
+       {
+         "class": "Telegram-deesktop",
+         "instance": "telegram-desktop",
+         "title": "^Telegram\\ \\(35732\\)$"
+       }
+    ],
+    "type": "con"
+}
+
