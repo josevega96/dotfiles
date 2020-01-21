@@ -157,12 +157,14 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 #workspace init 
 exec_always --no-startup-id compton -b
 exec --no-startup-id i3-msg 'workspace 1:web; exec firefox'
-exec --no-startup-id i3-msg 'workspace 2; append_layout /home/jose/.config/i3/ws2.json; exec code; exec kitty; exec kitty -e ranger'
-exec --no-startup-id i3-msg 'workspace 3; exec telegram-desktop;exec franz'
-for_window [class="Franz"] move to workspace $ws3 
-for_window [class="TelegramDesktop"] move to workspace $ws3
+exec --no-startup-id i3-msg 'workspace 2; append_layout /home/jose/.config/i3/ws2.json; exec code; exec kittyi -e neofetch; exec kitty -e ranger'
+exec --no-startup-id i3-msg 'workspace 3; exec ms-office-online'
+for_window [class="ms-office-online"] move to workspace $ws3
+exec --no-startup-id i3-msg 'workspace 4; exec telegram-desktop;exec franz'
+for_window [class="Franz"] move to workspace $ws4 
+for_window [class="TelegramDesktop"] move to workspace $ws4
 exec --no-startup-id i3-msg 'workspace 5; exec spotify'
-for_window [class="Spotify"] move to workspace $ws4
+for_window [class="Spotify"] move to workspace $ws5
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
