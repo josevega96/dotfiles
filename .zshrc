@@ -108,8 +108,10 @@ alias i3config="vim ~/.config/i3/config"
 alias zshsource="source ~/.zshrc"
 alias usbm="mount /media/usb"
 alias usbu="umount /media/usb"
-alias bareconf='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-alias perseus=". build/envsetup.sh && lunch potato_perseus-userdebug && mka api-stubs-docs && mka hiddenapi-lists-docs && mka system-api-stubs-docs && mka test-api-stubs-docs && mka kronic"
+alias sdcm="mount /media/sdcard"
+alias sdcu="umount /media/sdcard"
+alias bareconf="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
+alias perseus=". build/envsetup.sh && lunch potato_perseus-userdebug && mka api-stubs-docs && mka hiddenapi-lists-docs && mka system-api-stubs-docs && mka test-api-stubs-docs"
 
 #exports
 export USE_CCACHE=1
