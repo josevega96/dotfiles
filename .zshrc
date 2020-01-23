@@ -117,5 +117,8 @@ alias perseus=". build/envsetup.sh && lunch potato_perseus-userdebug && mka api-
 export USE_CCACHE=1
 export CCACHE_EXEC=$(command -v ccache)
 
+#init
+neofetch
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
