@@ -118,6 +118,7 @@ export USE_CCACHE=1
 export CCACHE_EXEC=$(command -v ccache)
 
 #init
+(cat ~/.cache/wal/sequences &)
 neofetch
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
