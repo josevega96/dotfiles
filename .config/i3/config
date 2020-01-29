@@ -31,7 +31,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 
 #wallpaper set 
-exec_always "wal -i /home/jose/Pictures/wallpapers/wal1.jpg"
+exec_always "wal -i /home/jose/Pictures/wallpapers"
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
