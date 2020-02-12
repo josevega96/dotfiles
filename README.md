@@ -22,13 +22,26 @@ python-i3ipc
 AUR:
 polybar
 compton-tryone-git
-rofi-menus-git
 nerd-fonts-complete
 ttf-google-sans
 ms-office-online
 whatsapp-nativefier-dark
 telegram-desktop
 spotify
+
+External:
+
+rofi-menus
+https://gitlab.com/vahnrr/rofi-menus
+
+minimal firefox 
+https://github.com/mut-ex/minimal-functional-fox
+
+wal vscode
+https://marketplace.visualstudio.com/items?itemName=cmschuetz12.wal
+
+oh my zsh 
+https://ohmyz.sh/
 
 ## How to install 
 I made this as a bare git repository so you can be able to clone directly to your home directory for mor info you can check 
