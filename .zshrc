@@ -75,6 +75,7 @@ plugins=(git
         web-search
 	alias-finder
 	adb
+	repo
 	zsh-syntax-highlighting	)
 
 source $ZSH/oh-my-zsh.sh
