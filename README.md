@@ -42,17 +42,16 @@ steps
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 ```
 
-2. Add .cfg folder and README.MD to .gitignore
+2. Add .cfg folder to .gitignore
 
 ```
 echo ".cfg" >> .gitignore
-echo "README.md" >> .gitignore
 ```
 
 3. Clone the bare git repository 
 
 ```
-git clone --bare https://github.com/josevega96/dotfiles $HOME/.cfg
+git clone --bare -b master https://github.com/josevega96/dotfiles $HOME/.cfg
 ```
 
 4.Cloning might change the alias in your .bashrc or .zshrc if thats the case re add it 
@@ -74,13 +73,7 @@ after checking out you might find some errors because the file already exists, i
 config config --local status.showUntrackedFiles no
 ```
 
-7.Remove README.md from home directory (this should be fine because we previously added it to .gitignore)
-
-```
-rm README.md
-```
-
-8. Copy the fonts inside the .config/polybar/fonts
+7. Copy the fonts inside the .config/polybar/fonts
 
 ```
 # cp ~/.config/polybar/fonts/* /usr/share/fonts
