@@ -213,9 +213,14 @@ bindsym $mod+c exec code
 
 #polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh
+
+#auto tyling
+exec --no-startup-id ~/.config/i3/scripts/alternating_layouts.py
                                     
 #default workspace
 exec --no-startup-id i3-msg workspace 1:web
 
 #init
 exec --no-startup-id dunst
+
+
