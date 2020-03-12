@@ -170,6 +170,8 @@ for_window [class="TelegramDesktop"] move to workspace $ws4
 for_window [class="whatsapp-nativefier-d52542"] move to workspace $ws4 
 exec --no-startup-id i3-msg 'workspace 5; exec spotify; exec kitty -e wal -R'
 for_window [class="Spotify"] move to workspace $ws5
+exec --no-startup-id i3-msg 'workspace 6; exec lutris;'
+for_window [class="Lutris"] move to workspace $ws6
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
