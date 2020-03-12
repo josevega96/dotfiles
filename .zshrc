@@ -116,6 +116,7 @@ alias bareconf="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
 alias perseus=". build/envsetup.sh && lunch potato_perseus-userdebug && mka api-stubs-docs && mka hiddenapi-lists-docs && mka system-api-stubs-docs && mka test-api-stubs-docs"
 alias tb="nc termbin.com 9999"
 alias setup="source venv/bin/activate && . build/envsetup.sh"
+alias speed="curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -"
 
 #exports
 export USE_CCACHE=1
