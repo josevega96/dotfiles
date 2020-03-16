@@ -9,6 +9,7 @@ i3-scrot
 lib32-ncurses5-compat-libs
 lineageos-devel
 linux-clear
+linux-clear-headers
 ly
 ms-office-online
 ncurses5-compat-libs
