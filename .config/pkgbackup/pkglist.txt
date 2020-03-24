@@ -56,6 +56,8 @@ patchelf
 perl-anyevent-i3
 pkgconf
 playerctl
+pulseaudio
+pulseaudio-alsa
 python-gobject
 python-pip
 python-pywal
