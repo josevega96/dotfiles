@@ -219,9 +219,6 @@ hide_edge_borders both
 bindsym $mod+b exec firefox
 bindsym $mod+c exec code
 
-#polybar
-exec_always --no-startup-id sh ~/.config/polybar/launch.sh
-
 #auto tyling
 exec_always --no-startup-id ~/.config/i3/scripts/alternating_layouts.py
                                     
@@ -230,5 +227,7 @@ exec --no-startup-id i3-msg workspace 1
 
 #init
 exec --no-startup-id dunst
+exec --no-startup-id lxsession
 
-
+#polybar
+exec_always --no-startup-id "sleep 3; sh ~/.config/polybar/launch.sh"
