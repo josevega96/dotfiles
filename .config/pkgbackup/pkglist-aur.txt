@@ -26,3 +26,4 @@ ttf-google-sans
 whatsapp-nativefier-dark
 xml2
 yay
+zoom

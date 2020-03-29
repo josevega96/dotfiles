@@ -11,7 +11,9 @@ bison
 clang
 cmake
 code
+dnsmasq
 dunst
+ebtables
 efibootmgr
 exfat-utils
 fakeroot
@@ -39,9 +41,11 @@ lib32-vulkan-intel
 libnotify
 libtool
 libva-intel-driver
+libvirt
 linux-firmware
 linux-zen
 lutris
+lxsession
 lzip
 m4
 make
@@ -64,6 +68,7 @@ python-gobject
 python-pip
 python-pywal
 python2
+qemu
 ranger
 refind-efi
 reflector
@@ -77,6 +82,7 @@ tigervnc
 tk
 unrar
 vi
+virt-manager
 vulkan-intel
 wget
 which
