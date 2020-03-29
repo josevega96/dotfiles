@@ -18,6 +18,7 @@ pacmixer
 backlight-git 
 acpilight
 python-i3ipc
+lxsession
 
 AUR:
 polybar
@@ -96,4 +97,4 @@ After all the steps are done all configs shound be installed and as an extra you
 
 ## Screenshots
 
-![screen shot of the finished setup](https://i.imgur.com/8Xy7uyt.jpg)
+![screen shot of the finished setup](https://i.imgur.com/aIG77u7.jpg)
