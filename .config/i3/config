@@ -31,7 +31,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 
 #wallpaper set 
-exec_always "wal -i ~/Pictures/wallpapers/wal7.jpg"
+exec_always "wal -i ~/.config/wallpapers/wal1.jpg"
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -60,10 +60,10 @@ bindsym $mod+Return exec kitty
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id appsmenu 
-bindsym $mod+p exec --no-startup-id  powermenu
-bindsym Print exec --no-startup-id scrotmenu
-bindsym $mod+n exec --no-startup-id networkmenu
+bindsym $mod+space exec --no-startup-id .config/rofi/scripts/appsmenu.sh 
+bindsym $mod+p exec --no-startup-id .config/rofi/scripts/powermenu.sh
+bindsym $mod+n exec --no-startup-id .config/rofi/scripts/networkmenu.py
+bindsym Print exec --no-startup-id .config/rofi/scripts/scrotmenu.sh
 bindsym Shift+$mod+m exec --no-startup-id mpdmenu
 
 
@@ -114,7 +114,7 @@ bindsym $mod+e layout toggle split
 bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+bindsym $mod1+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
