@@ -2,6 +2,7 @@ aosp-devel
 awesome-git
 compton-tryone-git
 dragon-drag-and-drop
+edopro-bin
 ffmpeg-compat-57
 fritzing
 gotop
@@ -16,6 +17,7 @@ ms-office-online
 ncurses5-compat-libs
 nerd-fonts-complete
 nodejs-nativefier
+packettracer
 polybar
 spicetify-cli
 spicetify-themes-git

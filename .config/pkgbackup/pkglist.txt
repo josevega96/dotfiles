@@ -80,7 +80,7 @@ python2
 python2-distlib
 qemu
 ranger
-refind-efi
+refind
 reflector
 rofi
 sed
