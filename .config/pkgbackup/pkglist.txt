@@ -91,6 +91,7 @@ telegram-desktop
 texinfo
 tigervnc
 tk
+udiskie
 unrar
 vi
 virt-manager
