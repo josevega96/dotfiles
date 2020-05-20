@@ -1,5 +1,4 @@
 aosp-devel
-awesome-git
 compton-tryone-git
 dragon-drag-and-drop
 edopro-bin
@@ -7,7 +6,6 @@ ffmpeg-compat-57
 fritzing
 gotop
 i3-scrot
-i3ipc-python-git
 lib32-ncurses5-compat-libs
 lineageos-devel
 linux-clear
@@ -18,7 +16,6 @@ ncurses5-compat-libs
 nerd-fonts-complete
 nodejs-nativefier
 packettracer
-polybar
 spicetify-cli
 spicetify-themes-git
 spotify

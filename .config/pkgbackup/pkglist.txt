@@ -32,7 +32,6 @@ grep
 groff
 gvim
 gzip
-i3-gaps
 inetutils
 kitty
 lib32-alsa-plugins
@@ -74,11 +73,13 @@ playerctl
 pulseaudio
 pulseaudio-alsa
 python-gobject
+python-iwlib
 python-pip
 python-pywal
 python2
 python2-distlib
 qemu
+qtile
 ranger
 refind
 reflector
@@ -107,4 +108,5 @@ xorg-server
 xorg-util-macros
 xorg-xev
 xorg-xmodmap
+xterm
 zsh
