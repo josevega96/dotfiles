@@ -337,6 +337,7 @@ floating_layout = layout.Floating(float_rules=[
     {'wmclass': 'ssh-askpass'},  # ssh-askpass
     {'wmclass': 'lxpolkit'},  # lxpolkit
     {'wmclass': 'vncviewer'},  # vncviewer
+    {'wmclass': 'dragon-drag-and-drop'},  # dragon
 ])
 auto_fullscreen = True
 focus_on_window_activation = "smart"
