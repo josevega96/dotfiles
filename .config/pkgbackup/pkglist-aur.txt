@@ -15,7 +15,6 @@ ms-office-online
 ncurses5-compat-libs
 nerd-fonts-complete
 nodejs-nativefier
-packettracer
 spicetify-cli
 spicetify-themes-git
 spotify
