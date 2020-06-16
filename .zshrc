@@ -116,6 +116,7 @@ alias bareconf="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
 alias init-build="mka api-stubs-docs && mka hiddenapi-lists-docs && mka system-api-stubs-docs && mka test-api-stubs-docs"
 alias resync="repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags"
 alias tb="nc termbin.com 9999"
+alias pyset="virtualenv2 --system-site-packages venv"
 alias setup="source venv/bin/activate && . build/envsetup.sh"
 alias speed="curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -"
 
