@@ -59,8 +59,8 @@ keys = [
     Key([mod], "l", lazy.layout.right()),
 
     # Move windows up or down in current stack
-    Key([mod, "shift"], "k", lazy.layout.shuffle_down()),
-    Key([mod, "shift"], "j", lazy.layout.shuffle_up()),
+    Key([mod, "shift"], "k", lazy.layout.shuffle_up()),
+    Key([mod, "shift"], "j", lazy.layout.shuffle_down()),
 
     # Switch window focus to other pane(s) of stack
     Key([mod], "space", lazy.layout.next()),
@@ -338,6 +338,7 @@ floating_layout = layout.Floating(float_rules=[
     {'wmclass': 'lxpolkit'},  # lxpolkit
     {'wmclass': 'vncviewer'},  # vncviewer
     {'wmclass': 'dragon-drag-and-drop'},  # dragon
+    {'wmclass': 'Steam'},  # steam 
 ])
 auto_fullscreen = True
 focus_on_window_activation = "smart"
