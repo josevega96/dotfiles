@@ -17,4 +17,34 @@ runtime! archlinux.vim
 " do not load defaults if ~/.vimrc is missing
 "let skip_defaults_vim=1
 
+syntax on 
+
 set clipboard=unnamedplus
+set noerrorbells
+set tabstop=4 softtabstop=4
+set shiftwidth=4
+set expandtab
+set smartindent
+set nu
+set nowrap 
+set smartcase
+set noswapfile 
+set nobackup
+set undodir=~/.vim/undodir
+set undofile
+set incsearch
+set encoding=utf-8
+
+call plug#begin('~/.vim/plugged')
+Plug 'jremmen/vim-ripgrep'
+Plug 'tpope/vim-fugitive'
+Plug 'leafgarland/typescript-vim'
+Plug 'vim-utils/vim-man'
+Plug 'git@github.com:ctrlpvim/ctrlp.vim.git'
+Plug 'git@github.com:ycm-core/YouCompleteMe.git'
+Plug 'mbbill/undotree'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+call plug#end()
+
+let g:airline_powerline_fonts = 1
