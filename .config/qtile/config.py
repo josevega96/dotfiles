@@ -79,7 +79,7 @@ keys = [
 
    #music
     Key(["mod1"], "s", lazy.spawn('playerctl play-pause')),
-    Key(["mod1"], "a", lazy.spawn('playerctl prevoius')),
+    Key(["mod1"], "a", lazy.spawn('playerctl previous')),
     Key(["mod1"], "d", lazy.spawn('playerctl next')),   
 
     # Toggle between split and unsplit sides of stack.
