@@ -1,9 +1,10 @@
 aosp-devel
 compton-tryone-git
+dockd
 dragon-drag-and-drop
-edopro-bin
 ffmpeg-compat-57
 fritzing
+gerrit
 gotop
 i3-scrot
 lib32-ncurses5-compat-libs
@@ -11,7 +12,6 @@ lineageos-devel
 linux-clear
 linux-clear-headers
 ly
-ms-office-online
 ncurses5-compat-libs
 nerd-fonts-complete
 nodejs-nativefier

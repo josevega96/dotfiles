@@ -2,10 +2,13 @@ acpilight
 alsa-firmware
 alsa-utils
 android-tools
+arandr
+arch-install-scripts
 arduino
 autoconf
 automake
 base
+bind-tools
 binutils
 bison
 clang
