@@ -137,7 +137,6 @@ layout_theme = {"border_width": 2,
 
 group_names = [("WWW", {'layout': 'max','spawn': 'firefox'}),
               ("DEV", {'layout': 'monadtall','matches':[Match(wm_class=['code-oss','kitty'])],'spawn': ['.config/qtile/dev_layout.sh'] }),
-               ("DOC", {'layout': 'max','matches':[Match(wm_class=['ms-office-online'])],'spawn': ['ms-office-online'] }),
                ("CHAT", {'layout': 'monadtall','matches':[Match(wm_class=['TelegramDesktop','whatsapp-nativefier-d52542'])],'spawn': ['telegram-desktop','whatsapp-nativefier-dark']}),
                ("MUS", {'layout': 'max','matches':[Match(wm_class=['spotify'])],'spawn': ['spotify']}),
                ("GAME", {'layout': 'max','matches':[Match(wm_class=['Lutris'])],'spawn': ['lutris']}),
@@ -338,7 +337,6 @@ floating_layout = layout.Floating(float_rules=[
     {'wmclass': 'lxpolkit'},  # lxpolkit
     {'wmclass': 'vncviewer'},  # vncviewer
     {'wmclass': 'dragon-drag-and-drop'},  # dragon
-    {'wmclass': 'Steam'},  # steam 
 ])
 auto_fullscreen = True
 focus_on_window_activation = "smart"
