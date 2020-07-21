@@ -122,6 +122,7 @@ alias tb="nc termbin.com 9999"
 alias pyset="virtualenv2 --system-site-packages venv"
 alias setup="source venv/bin/activate && . build/envsetup.sh"
 alias speed="curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -"
+alias clear="clear && neofetch"
 
 #exports
 export USE_CCACHE=1
