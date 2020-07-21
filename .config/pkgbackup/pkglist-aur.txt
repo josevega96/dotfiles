@@ -3,7 +3,6 @@ compton-tryone-git
 dockd
 dragon-drag-and-drop
 ffmpeg-compat-57
-fritzing
 gerrit
 gotop
 i3-scrot
@@ -21,6 +20,6 @@ spotify
 spotify-tui
 spotifyd
 ttf-google-sans
-whatsapp-nativefier-dark
+whatsapp-nativefier
 xml2
 yay
