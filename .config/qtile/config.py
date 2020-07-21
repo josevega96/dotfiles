@@ -175,7 +175,7 @@ layouts = [
 ############################
 
 widget_defaults = dict(
-    font='sans',
+    font='Google Sans',
     fontsize=12,
     padding=3,
 )
