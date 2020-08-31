@@ -1,5 +1,6 @@
 android-studio
 aosp-devel
+bettergram
 compton-tryone-git
 dockd
 dragon-drag-and-drop

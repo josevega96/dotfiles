@@ -95,7 +95,6 @@ sed
 steam
 subversion
 sudo
-telegram-desktop
 texinfo
 tigervnc
 tk
