@@ -1,6 +1,5 @@
 android-studio
 aosp-devel
-bettergram
 compton-tryone-git
 dockd
 dragon-drag-and-drop
@@ -22,6 +21,7 @@ spicetify-cli
 spicetify-themes-git
 spotify
 spotify-tui
+telegram-desktop-bin
 ttf-google-sans
 whatsapp-nativefier
 xml2

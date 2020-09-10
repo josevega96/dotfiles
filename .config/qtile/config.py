@@ -141,7 +141,7 @@ layout_theme = {"border_width": 2,
 
 group_names = [("WWW", {'layout': 'max','spawn': 'firefox'}),
               ("DEV", {'layout': 'monadtall','matches':[Match(wm_class=['code-oss','kitty'])],'spawn': ['.config/qtile/dev_layout.sh'] }),
-               ("CHAT", {'layout': 'monadtall','matches':[Match(wm_class=['Bettergram','whatsapp-nativefier-d40211'])],'spawn': ['bettergram','whatsapp-nativefier']}),
+               ("CHAT", {'layout': 'monadtall','matches':[Match(wm_class=['TelegramDesktop','whatsapp-nativefier-d40211'])],'spawn': ['telegram-desktop','whatsapp-nativefier']}),
                ("MUS", {'layout': 'max','matches':[Match(wm_class=['spotify'])],'spawn': ['spotify']}),
                ("GAME", {'layout': 'max','matches':[Match(wm_class=['Lutris'])],'spawn': ['lutris']}),
                ("VBOX", {'layout': 'max','matches':[Match(wm_class=['Virt-manager'])],'spawn': ['virt-manager']}),
