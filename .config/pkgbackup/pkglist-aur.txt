@@ -10,8 +10,6 @@ gotop
 i3-scrot
 lib32-ncurses5-compat-libs
 lineageos-devel
-linux-clear
-linux-clear-headers
 ly
 ncurses5-compat-libs
 nerd-fonts-complete
@@ -21,7 +19,6 @@ spicetify-cli
 spicetify-themes-git
 spotify
 spotify-tui
-telegram-desktop-bin
 ttf-google-sans
 whatsapp-nativefier
 xml2

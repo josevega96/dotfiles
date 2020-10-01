@@ -14,6 +14,7 @@ bluez
 bluez-utils
 clang
 code
+davfs2
 dnsmasq
 dunst
 ebtables
@@ -52,7 +53,6 @@ libtool
 libva-intel-driver
 libvirt
 linux-firmware
-linux-lts
 lutris
 lxsession
 lzip
@@ -95,6 +95,7 @@ sed
 steam
 subversion
 sudo
+telegram-desktop
 texinfo
 tigervnc
 tk
@@ -108,7 +109,6 @@ which
 wine
 wine-gecko
 wine-mono
-winetricks
 xdg-user-dirs
 xorg-server
 xorg-util-macros
