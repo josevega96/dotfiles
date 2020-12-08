@@ -77,6 +77,7 @@ plugins=(git
 	alias-finder
 	adb
 	repo
+    vi-mode
 	zsh-syntax-highlighting	)
 
 source $ZSH/oh-my-zsh.sh
