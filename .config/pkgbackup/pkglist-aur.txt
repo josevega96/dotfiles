@@ -1,6 +1,6 @@
 android-studio
 aosp-devel
-compton-tryone-git
+btrfs-snapshot
 dockd
 dragon-drag-and-drop
 ffmpeg-compat-57
@@ -10,11 +10,14 @@ gotop
 i3-scrot
 lib32-ncurses5-compat-libs
 lineageos-devel
+linux-clear
+linux-clear-headers
 ly
 ncurses5-compat-libs
 nerd-fonts-complete
 nodejs-nativefier
-pulseaudio-modules-bt-git
+picom-jonaburg-git
+pulseaudio-modules-bt
 spicetify-cli
 spicetify-themes-git
 spotify
