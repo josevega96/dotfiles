@@ -2,7 +2,7 @@
 
 lxpolkit &
 mpris-proxy &
-compton & 
+picom & 
 udiskie &
 dunst  
 
