@@ -128,6 +128,8 @@ alias cl="clear && neofetch"
 #exports
 export USE_CCACHE=1
 export CCACHE_EXEC=$(command -v ccache)
+unset LINES
+unset COLUMNS
 
 #init
 (cat ~/.cache/wal/sequences &)
