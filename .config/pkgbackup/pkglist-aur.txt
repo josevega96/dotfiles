@@ -5,7 +5,6 @@ dockd
 dragon-drag-and-drop
 ffmpeg-compat-57
 flutter
-gerrit
 gotop
 i3-scrot
 lib32-ncurses5-compat-libs
@@ -13,15 +12,18 @@ lineageos-devel
 linux-clear
 linux-clear-headers
 ly
+mailspring-libre
 ncurses5-compat-libs
 nerd-fonts-complete
 nodejs-nativefier
-picom-jonaburg-git
+onlyoffice-bin
+picom-ibhagwan-git
 pulseaudio-modules-bt
 spicetify-cli
 spicetify-themes-git
 spotify
 spotify-tui
+teams
 ttf-google-sans
 whatsapp-nativefier
 xml2

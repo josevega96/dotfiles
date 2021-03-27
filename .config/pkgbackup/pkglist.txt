@@ -34,6 +34,7 @@ gcc
 gdb
 gettext
 git
+gnome-keyring
 gnu-netcat
 gptfdisk
 grep
@@ -41,6 +42,7 @@ groff
 gvim
 gzip
 inetutils
+intel-ucode
 kitty
 lib32-alsa-plugins
 lib32-fakeroot
@@ -62,7 +64,6 @@ lzip
 m4
 make
 man-db
-meld
 mpc
 mpd
 mpv
@@ -84,6 +85,7 @@ pulseaudio
 pulseaudio-alsa
 python-gobject
 python-iwlib
+python-lxml
 python-pip
 python-pywal
 python2
@@ -94,13 +96,14 @@ ranger
 refind
 reflector
 rofi
+rustup
 sed
 steam
 subversion
 sudo
+syncthing
 telegram-desktop
 texinfo
-tigervnc
 tk
 udiskie
 unrar
