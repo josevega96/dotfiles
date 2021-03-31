@@ -337,6 +337,7 @@ floating_layout = layout.Floating(float_rules=[
     {'wmclass': 'maketag'},  # gitk
     {'wname': 'branchdialog'},  # gitk
     {'wname': 'pinentry'},  # GPG key password entry
+    {'wname': 'Picture-in-Picture'},  # PiP
     {'wmclass': 'ssh-askpass'},  # ssh-askpass
     {'wmclass': 'lxpolkit'},  # lxpolkit
     {'wmclass': 'vncviewer'},  # vncviewer
