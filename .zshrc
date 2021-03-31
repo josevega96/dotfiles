@@ -75,6 +75,7 @@ plugins=(git
 	adb
 	extract
 	repo
+	brew
 	zsh-syntax-highlighting	)
 
 
@@ -109,6 +110,7 @@ alias zshconfig="vim ~/.zshrc"
 alias efimnt="sudo mkdir /Volumes/EFI && sudo mount -t msdos /dev/disk0s1 /Volumes/EFI"
 alias bareconf='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias speed="curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -"
+alias cl="clear && neofetch"
 
 # terminal init 
 neofetch
