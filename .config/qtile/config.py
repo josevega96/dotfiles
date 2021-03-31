@@ -104,8 +104,8 @@ keys = [
     Key([mod], "n", lazy.spawn('.config/rofi/scripts/networkmenu.py')),
 
     #toggle bluetooth
-    Key([mod], "b", lazy.spawn('systemctl start bluetooth')),
-    Key([mod, "shift"], "b", lazy.spawn('systemctl stop bluetooth')),
+    Key([mod], "b", lazy.spawn('bluetoothctl power on')),
+    Key([mod, "shift"], "b", lazy.spawn('bluetoothctl power off')),
 
 ]
 
