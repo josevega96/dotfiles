@@ -1,0 +1,9 @@
+{
+  "file": {
+    "download_directory": "/tmp/dcnnt",
+    "default_cmd": "xdg-open \"{path}\""
+  },
+  "link": {
+    "default_cmd": "xdg-open \"{url}\""
+  }
+}

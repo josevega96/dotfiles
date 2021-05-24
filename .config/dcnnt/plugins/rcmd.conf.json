@@ -1,0 +1,19 @@
+{
+  "menu": [
+   {
+      "name": "Shutdown",
+      "method": "shell",
+      "cmd": "shutdown -h now"
+    },
+    {
+      "name": "Buds Connect",
+      "method": "shell",
+      "cmd": "bluetoothctl connect 18:54:CF:DD:83:29"
+    },
+    {
+      "name": "Change Bluetooth",
+      "method": "shell",
+      "cmd": "bash ~/.config/qtile/bluetooth.sh"
+    }
+  ]
+}
