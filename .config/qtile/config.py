@@ -104,9 +104,11 @@ keys = [
     Key([mod], "n", lazy.spawn('.config/rofi/scripts/networkmenu.py')),
 
     #toggle bluetooth
-    Key([mod], "b", lazy.spawn('bluetoothctl power on')),
-    Key([mod, "shift"], "b", lazy.spawn('bluetoothctl power off')),
+    Key([mod], "b", lazy.spawn('.config/qtile/bluetooth.sh')),
 
+    # Toggle notification center
+    Key([mod], "z", lazy.spawn('bash .config/deadd/deaddhide.sh')),
+    Key([mod], "x", lazy.spawn('bash .config/deadd/clear.sh')),
 ]
 
 ############################
@@ -140,7 +142,7 @@ layout_theme = {"border_width": 2,
 ############################
 
 group_names = [("WWW", {'layout': 'max','spawn': 'firefox'}),
-              ("DEV", {'layout': 'monadtall','matches':[Match(wm_class=['code-oss','kitty'])],'spawn': ['.config/qtile/dev_layout.sh'] }),
+              ("DEV", {'layout': 'monadtall','matches':[Match(wm_class=['vscodium','kitty'])],'spawn': ['.config/qtile/dev_layout.sh'] }),
                ("CHAT", {'layout': 'monadtall','matches':[Match(wm_class=['TelegramDesktop','whatsapp-nativefier-d40211'])],'spawn': ['telegram-desktop','whatsapp-nativefier']}),
                ("MUS", {'layout': 'max','matches':[Match(wm_class=['spotify'])],'spawn': ['spotify']}),
                ("GAME", {'layout': 'max','matches':[Match(wm_class=['Lutris'])],'spawn': ['lutris']}),
@@ -338,10 +340,12 @@ floating_layout = layout.Floating(float_rules=[
     {'wname': 'branchdialog'},  # gitk
     {'wname': 'pinentry'},  # GPG key password entry
     {'wname': 'Picture-in-Picture'},  # PiP
+    {'wname': 'Microsoft Teams Notification'},  # Teams Notification 
     {'wmclass': 'ssh-askpass'},  # ssh-askpass
     {'wmclass': 'lxpolkit'},  # lxpolkit
     {'wmclass': 'vncviewer'},  # vncviewer
     {'wmclass': 'dragon-drag-and-drop'},  # dragon
+    {'wmclass': 'deadd-notification-center'},  # deadd
 ])
 auto_fullscreen = True
 focus_on_window_activation = "smart"

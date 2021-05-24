@@ -1,6 +1,6 @@
 #!/bin/bash
 
-code
+vscodium
 sleep 3
 kitty &
 sleep 1 

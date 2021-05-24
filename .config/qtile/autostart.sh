@@ -5,5 +5,6 @@ mpris-proxy &
 picom & 
 udiskie &
 syncthing -no-browser &
-dunst  
+dcnnt &
+deadd-notification-center  
 
