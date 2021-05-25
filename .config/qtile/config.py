@@ -78,9 +78,9 @@ keys = [
     Key([], "XF86AudioMute", lazy.spawn('amixer sset Master toggle')),   
 
    #music
-    Key(["mod1"], "s", lazy.spawn('playerctl play-pause')),
-    Key(["mod1"], "a", lazy.spawn('playerctl previous')),
-    Key(["mod1"], "d", lazy.spawn('playerctl next')),   
+    Key(["mod1"], "s", lazy.spawn('playerctl play-pause --player spotify')),
+    Key(["mod1"], "a", lazy.spawn('playerctl previous --player spotify')),
+    Key(["mod1"], "d", lazy.spawn('playerctl next --player spotify')),   
 
     # Toggle between split and unsplit sides of stack.
     # Split = all windows displayed
