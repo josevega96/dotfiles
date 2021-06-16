@@ -1,5 +1,5 @@
 function winupg {
 
-	gsudo Get-WUInstall
+	gsudo Get-WindowsUpdate -Install 
 
 }
