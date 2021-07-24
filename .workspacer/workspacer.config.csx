@@ -28,5 +28,21 @@ Action<IConfigContext> doConfig = (context) =>
     
     // WorkSpaces
     context.WorkspaceContainer.CreateWorkspaces("WEB", "OFFICE", "CHAT", "MUS");
+
+    //Workspace apps
+    context.WindowRouter.AddRoute((window) => window.Title.Contains("Edge") ? context.WorkspaceContainer["WEB"] : null);
+    context.WindowRouter.AddRoute((window) => window.Title.Contains("Word") ? context.WorkspaceContainer["OFFICE"] : null);
+    context.WindowRouter.AddRoute((window) => window.Title.Contains("Powerpoint") ? context.WorkspaceContainer["OFFICE"] : null);
+    context.WindowRouter.AddRoute((window) => window.Title.Contains("Excel") ? context.WorkspaceContainer["OFFICE"] : null);
+    context.WindowRouter.AddRoute((window) => window.Title.Contains("Flie Explorer") ? context.WorkspaceContainer["OFFICE"] : null);
+    context.WindowRouter.AddRoute((window) => window.Title.Contains("VSCodium") ? context.WorkspaceContainer["OFFICE"] : null);
+    context.WindowRouter.AddRoute((window) => window.Title.Contains("WhatsApp") ? context.WorkspaceContainer["CHAT"] : null);
+    context.WindowRouter.AddRoute((window) => window.Title.Contains("Telegram") ? context.WorkspaceContainer["CHAT"] : null);
+    context.WindowRouter.AddRoute((window) => window.Title.Contains("Spotify") ? context.WorkspaceContainer["MUS"] : null);
+     
+
+    //Custom Rules
+    context.WindowRouter.AddFilter((window) => !window.Title.Contains("Search"));
+    context.WindowRouter.AddFilter((window) => !window.Title.Contains("PowerLauncher"));
 };
 return doConfig;
