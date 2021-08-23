@@ -69,13 +69,13 @@ keys = [
     Key([mod, "shift"], "space", lazy.layout.rotate()),
 
     #brightness control
-    Key([], "XF86MonBrightnessUp", lazy.spawn('xbacklight -inc 10')),
-    Key([], "XF86MonBrightnessDown", lazy.spawn('xbacklight -dec 10')),
+    Key([], "XF86MonBrightnessUp", lazy.spawn('bash .config/deadd/scripts/brightness.sh inc')),
+    Key([], "XF86MonBrightnessDown", lazy.spawn('bash .config/deadd/scripts/brightness.sh dec')),
     
    #volume control
-    Key([], "XF86AudioRaiseVolume", lazy.spawn('amixer sset Master 20%+')),
-    Key([], "XF86AudioLowerVolume", lazy.spawn('amixer sset Master 20%-')),
-    Key([], "XF86AudioMute", lazy.spawn('amixer sset Master toggle')),   
+    Key([], "XF86AudioRaiseVolume", lazy.spawn('bash .config/deadd/scripts/volume.sh inc')),
+    Key([], "XF86AudioLowerVolume", lazy.spawn('bash .config/deadd/scripts/volume.sh dec')),
+    Key([], "XF86AudioMute", lazy.spawn('bash .config/deadd/scripts/volume.sh mute')),   
 
    #music
     Key(["mod1"], "s", lazy.spawn('playerctl play-pause --player spotify')),
