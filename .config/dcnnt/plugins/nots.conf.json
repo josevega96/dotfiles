@@ -1,4 +1,4 @@
 {
   "icon_dir": "/tmp/dcnnt",
-  "cmd": "notify-send.py -i '{icon}' '{title}' '{text}'"
+  "cmd": "notify-send.py '{title}' '{text}' --hint string:image-path:file:/'{icon}'"
 }
