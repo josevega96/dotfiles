@@ -98,10 +98,10 @@ keys = [
     Key([mod], "r", lazy.spawncmd()),
 
     #toggle rofi menus
-    Key([mod], "space", lazy.spawn('.config/rofi/scripts/appsmenu.sh')),
-    Key([], "Print", lazy.spawn('.config/rofi/scripts/scrotmenu.sh')),
-    Key([mod], "p", lazy.spawn('.config/rofi/scripts/powermenu.sh')),
-    Key([mod], "n", lazy.spawn('.config/rofi/scripts/networkmenu.py')),
+    Key([mod], "space", lazy.spawn('.config/rofi/scripts/rofi-apps')),
+    Key([], "Print", lazy.spawn('.config/rofi/scripts/rofi-screenshot')),
+    Key([mod], "p", lazy.spawn('.config/rofi/scripts/rofi-power')),
+    Key([mod], "n", lazy.spawn('.config/rofi/scripts/rofi-network')),
 
     #toggle bluetooth
     Key([mod], "b", lazy.spawn('.config/qtile/bluetooth.sh')),
@@ -340,7 +340,6 @@ floating_layout = layout.Floating(float_rules=[
     {'wname': 'branchdialog'},  # gitk
     {'wname': 'pinentry'},  # GPG key password entry
     {'wname': 'Picture-in-Picture'},  # PiP
-    {'wname': 'Microsoft Teams Notification'},  # Teams Notification 
     {'wmclass': 'ssh-askpass'},  # ssh-askpass
     {'wmclass': 'lxpolkit'},  # lxpolkit
     {'wmclass': 'vncviewer'},  # vncviewer

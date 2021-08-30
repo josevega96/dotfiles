@@ -6,29 +6,29 @@
   font: @text-font;
 }
 #window {
-  height: @confirm-window-height;
-  width: @confirm-window-width;
+  height: @prompt-window-height;
+  width: @prompt-window-width;
   children: [ inputbar, horibox ];
-  border: @confirm-window-border;
+  border: @prompt-window-border;
   border-color: @accent;
 }
 #inputbar {
   children: [ prompt ];
 }
 #prompt {
-  padding: @confirm-prompt-padding;
-  margin: @confirm-prompt-margin;
+  padding: @prompt-prompt-padding;
+  margin: @prompt-prompt-margin;
   background-color: @accent;
   text-color: @background-light;
 }
 #listview {
-  padding: @confirm-listview-padding;
+  padding: @prompt-listview-padding;
   spacing: @option-5-listview-spacing;
   lines: 2;
 }
 #element {
-  font: @confirm-text-font;
-  padding: @confirm-element-padding;
+  font: @prompt-text-font;
+  padding: @prompt-element-padding;
 }
 element.selected.urgent {
   background-color: @off;

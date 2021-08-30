@@ -1,9 +1,9 @@
 /**
  * Settings used in every rofi option menu:
- *  - i3layoutmenu
- *  - mpdmenu
- *  - powermenu
- *  - scrotmenu
+ *  - i3-layout
+ *  - music
+ *  - power
+ *  - screenshot
  */
 @import "settings.rasi"
 * {

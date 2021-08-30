@@ -52,7 +52,7 @@ def dmenu_cmd(num_lines, prompt="Networks", active_lines=None):  # pylint: disab
     """
     dmenu_command = "dmenu"
     conf = configparser.ConfigParser()
-    conf.read(expanduser("~/.config/networkmanager-dmenu/config.ini"))
+    conf.read(expanduser("~/.config/rofi/network-config.ini"))
     if not conf.sections():
         res = [dmenu_command, "-i", "-l", str(num_lines), "-p", str(prompt)]
         res.extend(sys.argv[1:])
