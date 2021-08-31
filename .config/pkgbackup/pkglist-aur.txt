@@ -9,7 +9,6 @@ ebtables
 ffmpeg-compat-57
 flutter
 gotop
-i3-scrot
 lib32-ncurses5-compat-libs
 lineageos-devel
 linux-clear
