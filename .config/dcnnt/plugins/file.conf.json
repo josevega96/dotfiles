@@ -1,4 +1,11 @@
 {
   "download_directory": "/tmp/dconnect",
-  "shared_dirs": []
+  "shared_dirs": [
+   {
+      "path": "$HOME/Downloads/dcnnt",
+      "glob": "*",
+      "name": null,
+      "deep": 100
+    }
+  ]
 }
