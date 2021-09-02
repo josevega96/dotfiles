@@ -19,8 +19,8 @@
    * Values bellow are 'no-padding' ones for a size 60 (@icon-font) font, played
    * around using this character: ■
    * We then add add 100 actual padding around the icons.
-   *                                    -12px 0px   -19px -72px */
-  option-element-padding:               88px  100px 81px  28px;
+   *                                    -12px 0px   -19px -96px */
+  option-element-padding:               88px  100px 81px  80px;
   option-3-window-padding:              408px 446px;
   option-3-listview-spacing:            126px;
   option-5-window-padding:              408px 183px;
@@ -38,7 +38,7 @@
   music-element-border:                 12px;
   /* Every @option-element-padding minus @music-element-border, except for the
    * bottom value. */
-  music-element-padding:                76px 88px 139px 65px;
+  music-element-padding:                76px 88px 70px 66px;
 
   network-textbox-prompt-colon-padding: 14px 10px 10px 10px;
 
@@ -48,7 +48,7 @@
   prompt-window-border:                 2px;
   prompt-prompt-padding:                20px 30px;
   prompt-prompt-margin:                 8px;
-  prompt-listview-padding:              60px 114px 0px 114px;
+  prompt-listview-padding:              60px 114px 0px 140px;
   /* Values bellow are 'no-padding' ones for a size 18 (@prompt-text-font) font,
    * played around using this character: ■
    * We then add add 30 actual padding around the text.

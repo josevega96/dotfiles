@@ -11,3 +11,11 @@
   lines: 5;
 }
 
+element-icon{
+    background-color: transparent;
+    }
+
+element-text{
+    background-color: transparent;
+    }
+
