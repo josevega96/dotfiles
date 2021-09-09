@@ -14,7 +14,7 @@ lineageos-devel
 linux-clear
 linux-clear-headers
 ly
-mailspring-libre
+mailspring
 ncurses5-compat-libs
 nerd-fonts-complete
 nodejs-nativefier
