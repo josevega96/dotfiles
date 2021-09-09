@@ -47,12 +47,13 @@ Plug 'jremmen/vim-ripgrep'
 Plug 'tpope/vim-fugitive'
 Plug 'leafgarland/typescript-vim'
 Plug 'vim-utils/vim-man'
-Plug 'git@github.com:ctrlpvim/ctrlp.vim.git'
-Plug 'git@github.com:ycm-core/YouCompleteMe.git'
+Plug 'https://github.com/kien/ctrlp.vim.git'
+Plug 'https://github.com/ycm-core/YouCompleteMe.git', { 'do': './install.py' }
 Plug 'mbbill/undotree'
+Plug 'dylanaraps/wal.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 let g:airline_powerline_fonts = 1
-let g:airline_theme='dark'
+let g:airline_theme='wal'
