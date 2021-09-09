@@ -17,6 +17,5 @@ element-text{
     background-color: transparent;
     }
 
-@import "active-colorscheme.rasi"
-
+@import "~/.cache/wal/colors-rofi-dark"
 
