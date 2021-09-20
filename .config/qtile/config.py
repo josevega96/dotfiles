@@ -325,26 +325,27 @@ follow_mouse_focus = True
 bring_front_click = False
 cursor_warp = False
 floating_layout = layout.Floating(float_rules=[
-    # Run the utility of `xprop` to see the wm class and name of an X client.
-    {'wmclass': 'confirm'},
-    {'wmclass': 'dialog'},
-    {'wmclass': 'download'},
-    {'wmclass': 'error'},
-    {'wmclass': 'file_progress'},
-    {'wmclass': 'notification'},
-    {'wmclass': 'splash'},
-    {'wmclass': 'toolbar'},
-    {'wmclass': 'confirmreset'},  # gitk
-    {'wmclass': 'makebranch'},  # gitk
-    {'wmclass': 'maketag'},  # gitk
-    {'wname': 'branchdialog'},  # gitk
-    {'wname': 'pinentry'},  # GPG key password entry
-    {'wname': 'Picture-in-Picture'},  # PiP
-    {'wmclass': 'ssh-askpass'},  # ssh-askpass
-    {'wmclass': 'lxpolkit'},  # lxpolkit
-    {'wmclass': 'vncviewer'},  # vncviewer
-    {'wmclass': 'dragon-drag-and-drop'},  # dragon
-    {'wmclass': 'deadd-notification-center'},  # deadd
+    # Run the utility of `xprop` to see the wm class and name of an X client. 
+    *layout.Floating.default_float_rules,
+    Match(wm_class= 'confirm'),
+    Match(wm_class= 'dialog'),
+    Match(wm_class= 'download'),
+    Match(wm_class= 'error'),
+    Match(wm_class= 'file_progress'),
+    Match(wm_class= 'notification'),
+    Match(wm_class= 'splash'),
+    Match(wm_class= 'toolbar'),
+    Match(wm_class= 'confirmreset'),  # gitk
+    Match(wm_class= 'makebranch'),  # gitk
+    Match(wm_class= 'maketag'),  # gitk
+    Match(title= 'branchdialog'),  # gitk
+    Match(title= 'pinentry'),  # GPG key password entry
+    Match(title= 'Picture-in-Picture'),  # PiP
+    Match(wm_class= 'ssh-askpass'),  # ssh-askpass
+    Match(wm_class= 'lxpolkit'),  # lxpolkit
+    Match(wm_class= 'vncviewer'),  # vncviewer
+    Match(wm_class= 'dragon-drag-and-drop'),  # dragon
+    Match(wm_class= 'deadd-notification-center'),  # deadd
 ])
 auto_fullscreen = True
 focus_on_window_activation = "smart"
