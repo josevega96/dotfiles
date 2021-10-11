@@ -141,13 +141,13 @@ layout_theme = {"border_width": 2,
 #                          #
 ############################
 
-group_names = [("WWW", {'layout': 'max','spawn': 'firefox'}),
-              ("DEV", {'layout': 'monadtall','matches':[Match(wm_class=['vscodium','kitty'])],'spawn': ['.config/qtile/dev_layout.sh'] }),
-               ("CHAT", {'layout': 'monadtall','matches':[Match(wm_class=['TelegramDesktop','whatsapp-nativefier-d40211'])],'spawn': ['telegram-desktop','whatsapp-nativefier']}),
-               ("MUS", {'layout': 'max','matches':[Match(wm_class=['spotify'])],'spawn': ['spotify']}),
-               ("GAME", {'layout': 'max','matches':[Match(wm_class=['Lutris'])],'spawn': ['lutris']}),
-               ("VBOX", {'layout': 'max','matches':[Match(wm_class=['Virt-manager'])],'spawn': ['virt-manager']}),
-               ("EXTRA", {'layout': 'monadtall'}),]
+group_names = [("", {'layout': 'max','spawn': 'firefox'}),
+              ("", {'layout': 'monadtall','matches':[Match(wm_class=['vscodium','kitty'])],'spawn': ['.config/qtile/dev_layout.sh'] }),
+               ("", {'layout': 'monadtall','matches':[Match(wm_class=['TelegramDesktop','whatsapp-nativefier-d40211'])],'spawn': ['telegram-desktop','whatsapp-nativefier']}),
+               ("阮", {'layout': 'max','matches':[Match(wm_class=['spotify'])],'spawn': ['spotify']}),
+               ("", {'layout': 'max','matches':[Match(wm_class=['Lutris'])],'spawn': ['lutris']}),
+               ("", {'layout': 'max','matches':[Match(wm_class=['Virt-manager'])],'spawn': ['virt-manager']}),
+               ("ﰟ", {'layout': 'monadtall'}),]
 
 groups = [Group(name, **kwargs) for name, kwargs in group_names]
 
@@ -192,6 +192,7 @@ screens = [
         bottom=bar.Bar(
             [
                 widget.GroupBox(
+                    fontsize=25,
                     background=colors[4],
                     foreground=colors[4],
                     highlight_method='block',
@@ -253,7 +254,7 @@ screens = [
                     fontsize=37,
                     background=colors[4],
                     foreground=colors[15]),
-                widget.TextBox(text='',
+                widget.TextBox(text='墳',
                     padding=0,
                     fontsize=20,
                     background=colors[15],
@@ -339,6 +340,7 @@ floating_layout = layout.Floating(float_rules=[
     Match(wm_class= 'makebranch'),  # gitk
     Match(wm_class= 'maketag'),  # gitk
     Match(title= 'branchdialog'),  # gitk
+    Match(title= 'Android Emulator - Pixel_4_XL_API_30:5554'),  # gitk
     Match(title= 'pinentry'),  # GPG key password entry
     Match(title= 'Picture-in-Picture'),  # PiP
     Match(wm_class= 'ssh-askpass'),  # ssh-askpass
