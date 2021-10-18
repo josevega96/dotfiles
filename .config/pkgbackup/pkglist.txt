@@ -19,7 +19,6 @@ clang
 davfs2
 dnsmasq
 edk2-ovmf
-efibootmgr
 exfat-utils
 fakeroot
 feh
@@ -41,6 +40,7 @@ gvim
 gzip
 inetutils
 intel-ucode
+iptables-nft
 kitty
 lib32-alsa-plugins
 lib32-fakeroot
@@ -54,6 +54,8 @@ libnotify
 libtool
 libva-intel-driver
 libvirt
+lightdm
+linux
 linux-firmware
 linux-lts
 lutris
@@ -74,6 +76,7 @@ openssh
 p7zip
 pacman
 pacman-contrib
+papirus-icon-theme
 patch
 patchelf
 pavucontrol
@@ -107,7 +110,6 @@ texinfo
 tk
 udiskie
 unrar
-vi
 virt-manager
 vulkan-intel
 wget
