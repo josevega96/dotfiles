@@ -7,6 +7,7 @@ import datetime
 import os 
 import errno
 import socket
+from shutil import copy
 from urllib.request import urlopen,urlretrieve
 from xml.dom import minidom
 import sys
@@ -69,6 +70,11 @@ def download_wallpaper(idx=0):
         if Exception.errno != errno.EEXIST:
             print('file not found')
 
+    # copy to lightdm backgrounds folder
+    try:
+        copy(pic_path,'/usr/share/backgrounds/back.jpg')
+    except  IOError as e:
+        print('Unable to copy file')
 
     return pic_path
 
