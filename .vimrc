@@ -43,7 +43,7 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.vim/plugged')
-Plug 'jremmen/vim-ripgrep'
+Plug 'jremmen/vim-ripgrep', { 'do': 'sed -i \"149d\" ~/.vim/plugged/vim-ripgrep/plugin/vim-ripgrep.vim'  }
 Plug 'tpope/vim-fugitive'
 Plug 'leafgarland/typescript-vim'
 Plug 'vim-utils/vim-man'
