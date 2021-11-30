@@ -81,6 +81,10 @@ keys = [
     Key(["mod1"], "s", lazy.spawn('playerctl play-pause --player spotify')),
     Key(["mod1"], "a", lazy.spawn('playerctl previous --player spotify')),
     Key(["mod1"], "d", lazy.spawn('playerctl next --player spotify')),   
+    Key([], "XF86AudioPlay", lazy.spawn('playerctl play-pause --player spotify')),   
+    Key([], "XF86AudioPause", lazy.spawn('playerctl play-pause --player spotify')),   
+    Key([], "XF86AudioNext", lazy.spawn('playerctl next --player spotify')),   
+    Key([], "XF86AudioPrev", lazy.spawn('playerctl previous --player spotify')),   
 
     # Toggle between split and unsplit sides of stack.
     # Split = all windows displayed
