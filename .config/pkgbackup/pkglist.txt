@@ -92,7 +92,6 @@ python-pip
 python-pipenv
 python-pywal
 python2
-python2-distlib
 qemu
 qtile
 ranger
@@ -104,6 +103,7 @@ sed
 steam
 subversion
 sudo
+swtpm
 syncthing
 telegram-desktop
 texinfo
@@ -114,9 +114,6 @@ virt-manager
 vulkan-intel
 wget
 which
-wine
-wine-gecko
-wine-mono
 xclip
 xdg-user-dirs
 xorg-server
