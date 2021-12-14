@@ -13,5 +13,5 @@
 #fi
 
 xrandr --size 1920x1080 &
-feh --bg-scale ~/.config/wallpaper/1920x1080-dark-debian.png &
+feh --bg-scale ~/.config/wallpaper/debian.png &
 bash $HOME/.config/polybar/launch.sh --hack
