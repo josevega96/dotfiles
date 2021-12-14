@@ -1,12 +1,12 @@
 #! /bin/sh
 ##
-#script for resotoring debian packages
+#script for restoring debian packages
 ##
 
-sudo apt-key add ~/Repo.keys
-sudo cp -R ~/sources.list* /etc/apt/
+sudo apt install gnupg
+sudo apt-key add Repo.keys
+sudo cp -R sources.list* /etc/apt/
 sudo apt-get update
-sudo apt-get install dselect
+sudo apt-get install dselect -y
 sudo dselect update
-sudo dpkg --set-selections < ~/Package.list
-sudo apt-get dselect-upgrade -y
+sudo dpkg --set-selections < Pakage.list && sudo apt-get dselect-upgrade -y
