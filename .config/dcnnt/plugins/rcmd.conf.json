@@ -1,19 +1,38 @@
 {
   "menu": [
    {
+      "name": "Misc"
+    },
+   {
       "name": "Shutdown",
       "method": "shell",
-      "cmd": "shutdown -h now"
+      "cmd": "sudo -u jose shutdown -h now"
+    },
+   {
+      "name": "reboot",
+      "method": "shell",
+      "cmd": "sudo -u jose shutdown -h now -r"
     },
     {
-      "name": "Buds Connect",
-      "method": "shell",
-      "cmd": "bluetoothctl connect 18:54:CF:DD:83:29"
+      "name": "Arch"
     },
     {
       "name": "Change Bluetooth",
       "method": "shell",
       "cmd": "bash ~/.config/qtile/bluetooth.sh"
-    }
+    },
+   {
+     "name": "switch"
+   },
+   {
+      "name": "Update resolution",
+      "method": "shell",
+      "cmd": "bash ~/resol.sh"
+   },
+   {
+      "name": "Launch retropie",
+      "method": "shell",
+      "cmd": "bash ~/remote.sh"
+   }
   ]
 }
