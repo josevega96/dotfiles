@@ -1,10 +1,11 @@
 android-studio
 aosp-devel
 btrfs-snapshot
+davfs2
 dcnnt
 deadd-notification-center-bin
 dockd
-dragon-drag-and-drop
+dragon-drop
 flutter
 gotop
 lib32-ncurses5-compat-libs
@@ -17,6 +18,7 @@ nodejs-nativefier
 notify-send-py
 onlyoffice-bin
 picom-ibhagwan-git
+plymouth
 spicetify-cli
 spicetify-themes-git
 spotify

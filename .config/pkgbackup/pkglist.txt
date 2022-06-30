@@ -5,6 +5,7 @@ android-tools
 android-udev
 arandr
 arch-install-scripts
+archiso
 autoconf
 automake
 barrier
@@ -16,7 +17,6 @@ bluez
 bluez-utils
 btrfs-progs
 clang
-davfs2
 dnsmasq
 edk2-ovmf
 exfat-utils
@@ -54,6 +54,7 @@ libnotify
 libtool
 libva-intel-driver
 libvirt
+libxcrypt-compat
 lightdm
 linux
 linux-firmware
@@ -72,6 +73,7 @@ neofetch
 networkmanager
 ntfs-3g
 ntp
+obs-studio
 openssh
 p7zip
 pacman
@@ -81,6 +83,7 @@ patch
 patchelf
 pavucontrol
 perl-anyevent-i3
+pigz
 pipewire-pulse
 pkgconf
 playerctl
@@ -92,7 +95,7 @@ python-pip
 python-pipenv
 python-pywal
 python2
-qemu
+qemu-desktop
 qtile
 ranger
 refind
