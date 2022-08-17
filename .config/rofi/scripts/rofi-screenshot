@@ -4,6 +4,7 @@
 # the active window. The image is then saved and copied to the clipboard.
 # Uses: date maim notify-send rofi xclip xdotool
 
+rofi_command="rofi -theme themes/screenshot.rasi"
 save_location="$HOME/Pictures/Screenshots"
 screenshot_path="$save_location/$(date +'%Y-%m-%d-%H%M%S').png"
 
@@ -11,11 +12,9 @@ screen=''
 area=''
 window=''
 
-chosen=$(printf '%s;%s;%s\n' "$screen" "$area" "$window" \
-    | rofi -theme 'themes/screenshot.rasi' \
-           -dmenu \
-           -sep ';' \
-           -selected-row 1)
+options="$screen\n$area\n$window"
+
+chosen="$(echo -e "$options" | $rofi_command -dmenu -selected-row 1)"
 
 case "$chosen" in
     "$screen") extra_args='--delay=1' ;;

@@ -1,44 +1,34 @@
-#!/usr/bin/env sh
-#
-# A rofi powered menu to execute power related action.
-# Uses: amixer mpc poweroff reboot rofi rofi-prompt
+#!/bin/bash
 
-power_off=''
-reboot=''
-lock=''
-suspend='鈴'
-log_out=''
+rofi_command="rofi -theme themes/power.rasi"
 
-chosen=$(printf '%s;%s;%s;%s;%s\n' "$power_off" "$reboot" "$lock" "$suspend" \
-                                   "$log_out" \
-    | rofi -theme 'themes/power.rasi' \
-           -dmenu \
-           -sep ';' \
-           -selected-row 2)
+### Options ###
+power_off=""
+reboot=""
+lock=""
+suspend="鈴"
+log_out=""
+# Variable passed to rofi
+options="$power_off\n$reboot\n$lock\n$suspend\n$log_out"
 
-case "$chosen" in
-    "$power_off")
-        ~/.config/rofi/scripts/rofi-prompt --query 'Shutdown?' && poweroff
+chosen="$(echo -e "$options" | $rofi_command -dmenu -selected-row 2)"
+case $chosen in
+    $power_off)
+        ~/.config/rofi/scripts/rofi-prompt --yes-command "systemctl poweroff" --query "Shutdown?"
         ;;
-
-    "$reboot")
-        ~/.config/rofi/scripts/rofi-prompt  --query 'Reboot?' && reboot
+    $reboot)
+        ~/.config/rofi/scripts/rofi-prompt --yes-command "systemctl reboot" --query "Reboot?"
         ;;
-
-    "$lock")
-        # TODO Add your lockscreen command.
+    $lock)
+        light-locker-command -l
         ;;
-
-    "$suspend")
-        # Pause music and mute volume before suspending.
-        mpc --quiet pause
+    $suspend)
+        mpc -q pause
         amixer set Master mute
-        # TODO Add your suspend command.
+        systemctl suspend
         ;;
-
-    "$log_out")
-        # TODO Add your log out command.
+    $log_out)
+        i3-msg exit
         ;;
-
-    *) exit 1 ;;
 esac
+
