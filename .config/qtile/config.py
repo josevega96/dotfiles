@@ -150,7 +150,7 @@ group_names = [("", {'layout': 'max','spawn': 'firefox'}),
                ("", {'layout': 'monadtall','matches':[Match(wm_class=['TelegramDesktop','whatsapp-nativefier-d40211'])],'spawn': ['telegram-desktop','whatsapp-nativefier']}),
                ("阮", {'layout': 'max','matches':[Match(wm_class=['spotify'])],'spawn': ['spotify']}),
                ("", {'layout': 'max','matches':[Match(wm_class=['Lutris'])],'spawn': ['lutris']}),
-               ("", {'layout': 'max','matches':[Match(wm_class=['Virt-manager'])],'spawn': ['virt-manager']}),
+               ("", {'layout': 'max','matches':[Match(wm_class=['Virt-manager'])],'spawn': ['virt-manager']}),
                ("ﰟ", {'layout': 'monadtall'}),]
 
 groups = [Group(name, **kwargs) for name, kwargs in group_names]

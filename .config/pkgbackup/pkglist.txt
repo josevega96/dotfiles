@@ -55,7 +55,6 @@ libtool
 libva-intel-driver
 libvirt
 libxcrypt-compat
-lightdm
 linux
 linux-firmware
 linux-lts
@@ -94,7 +93,6 @@ python-lxml
 python-pip
 python-pipenv
 python-pywal
-python2
 qemu-desktop
 qtile
 ranger
@@ -102,6 +100,7 @@ refind
 reflector
 rofi
 rustup
+sddm
 sed
 steam
 subversion

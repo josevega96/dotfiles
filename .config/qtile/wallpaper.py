@@ -70,9 +70,9 @@ def download_wallpaper(idx=0):
         if Exception.errno != errno.EEXIST:
             print('file not found')
 
-    # copy to lightdm backgrounds folder
+    # copy to sddm backgrounds folder
     try:
-        copy(pic_path,'/usr/share/backgrounds/back.jpg')
+        copy(pic_path,'/usr/share/sddm/themes/sugar-dark/Background.jpg')
     except  IOError as e:
         print('Unable to copy file')
 
