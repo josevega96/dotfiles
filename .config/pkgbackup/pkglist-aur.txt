@@ -18,7 +18,6 @@ obsidian-appimage
 onlyoffice-bin
 picom-ibhagwan-git
 plymouth
-python2
 sddm-sugar-dark
 spicetify-cli
 spicetify-themes-git
