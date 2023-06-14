@@ -20,11 +20,11 @@
    * around using this character: ■
    * We then add add 100 actual padding around the icons.
    *                                    -12px 0px   -19px -96px */
-  option-element-padding:               88px  100px 81px  80px;
-  option-3-window-padding:              408px 446px;
-  option-3-listview-spacing:            126px;
-  option-5-window-padding:              408px 183px;
-  option-5-listview-spacing:            65px;
+  option-element-padding:               78px  90px 71px  70px;
+  option-3-window-padding:              400px 570px;
+  option-3-listview-spacing:            30px;
+  option-5-window-padding:              400px 300px;
+  option-5-listview-spacing:            35px;
   option-6-listview-spacing:            35px;
 
   apps-textbox-prompt-colon-padding:    16px;

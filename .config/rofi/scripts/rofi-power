@@ -3,10 +3,10 @@
 rofi_command="rofi -theme themes/power.rasi"
 
 ### Options ###
-power_off=""
-reboot=""
-lock=""
-suspend="鈴"
+power_off="󰤆"
+reboot="󰓦"
+lock=""
+suspend="󰤄"
 log_out=""
 # Variable passed to rofi
 options="$power_off\n$reboot\n$lock\n$suspend\n$log_out"
@@ -20,7 +20,6 @@ case $chosen in
         ~/.config/rofi/scripts/rofi-prompt --yes-command "systemctl reboot" --query "Reboot?"
         ;;
     $lock)
-        light-locker-command -l
         ;;
     $suspend)
         mpc -q pause
