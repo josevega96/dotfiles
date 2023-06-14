@@ -145,13 +145,13 @@ layout_theme = {"border_width": 2,
 #                          #
 ############################
 
-group_names = [("", {'layout': 'max','spawn': 'firefox'}),
+group_names = [("", {'layout': 'max','spawn': 'firefox'}),
               ("", {'layout': 'monadtall','matches':[Match(wm_class=['vscodium','kitty'])],'spawn': ['.config/qtile/dev_layout.sh'] }),
                ("", {'layout': 'monadtall','matches':[Match(wm_class=['TelegramDesktop','whatsapp-nativefier-d40211'])],'spawn': ['telegram-desktop','whatsapp-nativefier']}),
-               ("阮", {'layout': 'max','matches':[Match(wm_class=['spotify'])],'spawn': ['spotify']}),
-               ("", {'layout': 'max','matches':[Match(wm_class=['Lutris'])],'spawn': ['lutris']}),
+               ("", {'layout': 'max','matches':[Match(wm_class=['spotify'])],'spawn': ['spotify']}),
+               ("󰊗", {'layout': 'max','matches':[Match(wm_class=['Lutris'])],'spawn': ['lutris']}),
                ("", {'layout': 'max','matches':[Match(wm_class=['Virt-manager'])],'spawn': ['virt-manager']}),
-               ("ﰟ", {'layout': 'monadtall'}),]
+               ("", {'layout': 'monadtall'}),]
 
 groups = [Group(name, **kwargs) for name, kwargs in group_names]
 
@@ -196,10 +196,11 @@ screens = [
         bottom=bar.Bar(
             [
                 widget.GroupBox(
-                    fontsize=25,
+                    fontsize=18,
                     background=colors[4],
                     foreground=colors[4],
                     highlight_method='block',
+                    padding = 10,
                     hide_unused='true',
                     urgent_border='none',
                     this_current_screen_border=colors[2]
@@ -215,7 +216,7 @@ screens = [
                     foreground=colors[4]
                 ),
                 widget.TextBox(text='',
-                    padding=0,
+                    padding=-1,
                     fontsize=37,
                     background=colors[15],
                     foreground=colors[4]),
@@ -224,13 +225,13 @@ screens = [
                     foreground=colors[15]
                 ),
                 widget.TextBox(text='',
-                    padding=0,
-                    fontsize=37,
+                    padding=-2,
+                    fontsize=30,
                     background=colors[4],
                     foreground=colors[15]),
                 widget.TextBox(text='',
-                    padding=0,
-                    fontsize=20,
+                    padding=7,
+                    fontsize=15,
                     background=colors[15],
                     foreground=colors[4]),
                 widget.Wlan(
@@ -239,28 +240,28 @@ screens = [
                     interface='wlp3s0',
                     format='{essid}'),
                 widget.TextBox(text='',
-                    padding=0,
-                    fontsize=37,
+                    padding=-2,
+                    fontsize=30,
                     background=colors[15],
                     foreground=colors[4]),
                 widget.TextBox(text='',
-                    padding=0,
-                    fontsize=20,
+                    padding=7,
+                    fontsize=15,
                     background=colors[4],
                     foreground=colors[15]),
-                widget.Backlight(backlight_name="intel_backlight",
-                    brightness_file='/sys/class/backlight/intel_backlight/brightness',
+                widget.Backlight(backlight_name="acpi_video0",
+                    brightness_file='/sys/class/backlight/acpi_video0/brightness',
                     background=colors[4],
                     foreground=colors[15]),
                                 
                 widget.TextBox(text='',
-                    padding=0,
+                    padding=-1,
                     fontsize=37,
                     background=colors[4],
                     foreground=colors[15]),
-                widget.TextBox(text='墳',
-                    padding=0,
-                    fontsize=20,
+                widget.TextBox(text='󰋋',
+                    padding=10,
+                    fontsize=15,
                     background=colors[15],
                     foreground=colors[4]),
                 widget.Volume(
@@ -268,12 +269,12 @@ screens = [
                     background=colors[15]
                 ),
                 widget.TextBox(text='',
-                    padding=0,
+                    padding=-1,
                     fontsize=37,
                     background=colors[15],
                     foreground=colors[4]),
-                widget.TextBox(text='',
-                    padding=0,
+                widget.TextBox(text='󱨰',
+                    padding=7,
                     fontsize=20,
                     background=colors[4],
                     foreground=colors[15]),
@@ -281,7 +282,7 @@ screens = [
                     background=colors[4],
                     foreground=colors[15]),
                 widget.TextBox(text='',
-                    padding=0,
+                    padding=-1,
                     fontsize=37,
                     background=colors[4],
                     foreground=colors[15]),
@@ -290,7 +291,7 @@ screens = [
                     foreground=colors[4]
                 ),
                 widget.TextBox(text='',
-                    padding=0,
+                    padding=-1,
                     fontsize=37,
                     background=colors[15],
                     foreground=colors[4]),
