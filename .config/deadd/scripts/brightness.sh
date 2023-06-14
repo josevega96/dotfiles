@@ -11,6 +11,5 @@ fi
 BRIGHTNESS=$(xbacklight -get)
 NOTI_ID=$(notify-send.py "Brightness" "$BRIGHTNESS/100" \
                          --hint string:image-path:video-display boolean:transient:true \
-                                int:has-percentage:$BRIGHTNESS \
-                         --replaces-process "brightness-popup")
+                                int:has-percentage:$BRIGHTNESS)
 
